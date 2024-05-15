@@ -23,13 +23,13 @@ def apply_permissions_and_replace_files():
         shutil.copyfile("System32/Windows.ApplicationModel.Store.dll", dll_file_system32)
         shutil.copyfile("SysWOW64/Windows.ApplicationModel.Store.dll", dll_file_syswow64)
 
-        messagebox.showinfo("Success", "Files have been replaced successfully.")
+        messagebox.showinfo("Success", "Minecraft Bedrock Hacked successfully.")
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred: {str(e)}")
 
 # Create GUI
 root = tk.Tk()
-root.title("Permissions and Files Replacement")
+root.title("MCBTTweaker by Psycho")
 root.geometry("300x100")
 
 apply_button = tk.Button(root, text="Apply", command=apply_permissions_and_replace_files)
